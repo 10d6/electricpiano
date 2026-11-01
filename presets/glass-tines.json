@@ -1,0 +1,28 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Glass Tines",
+  "tags": [
+    "tine",
+    "twist"
+  ],
+  "params": {
+    "twist.stretch": 1.34,
+    "twist.sustain": 3,
+    "twist.shimmer": 0.5,
+    "hammer.strike": 0.85,
+    "amp.type": 3,
+    "amp.speaker": 0,
+    "room.mix": 0.5,
+    "pickup.offset": 0.15,
+    "wear.age": 0
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

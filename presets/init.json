@@ -3,5 +3,13 @@
   "synth": "electricpiano",
   "patchVersion": 1,
   "name": "Init",
-  "params": {}
+  "tags": [],
+  "params": {},
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
 }

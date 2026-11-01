@@ -1,0 +1,25 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Wurli Grit",
+  "tags": [
+    "reed",
+    "drive"
+  ],
+  "params": {
+    "mech.type": 1,
+    "pickup.type": 1,
+    "amp.type": 2,
+    "hammer.hardness": 0.7,
+    "pickup.gap": 0.7,
+    "amp.drive": 0.65
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

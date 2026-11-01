@@ -1,10 +1,57 @@
 {
   "theme": { "accent": "#b5532a" },
   "sections": [
-    { "title": "Oscillator", "controls": [ { "param": "osc.wave" } ] },
-    { "title": "Filter", "controls": [ { "param": "filter.cutoff", "size": "large" }, { "param": "filter.reso" } ] },
-    { "kit": "env1", "title": "Amp envelope" },
+    { "title": "Instrument", "controls": [
+      { "param": "mech.type" },
+      { "param": "pickup.type" },
+      { "param": "amp.type" }
+    ]},
+    { "title": "Hammer & Action", "controls": [
+      { "param": "hammer.hardness", "label": "Hardness", "size": "large" },
+      { "param": "hammer.strike", "label": "Strike point" },
+      { "param": "action.curve", "label": "Velocity" },
+      { "param": "damper.amount", "label": "Dampers" },
+      { "param": "noise.action", "label": "Key noise" }
+    ]},
+    { "title": "Pickup", "controls": [
+      { "param": "pickup.offset", "label": "Alignment", "size": "large" },
+      { "param": "pickup.gap", "label": "Distance" }
+    ]},
+    { "title": "Preamp & Cabinet", "controls": [
+      { "param": "amp.drive", "label": "Drive", "size": "large" },
+      { "param": "amp.bass", "label": "Bass" },
+      { "param": "amp.treble", "label": "Treble" },
+      { "param": "amp.speaker", "label": "Cabinet" },
+      { "param": "room.mix", "label": "Room" }
+    ]},
+    { "title": "Tremolo", "controls": [
+      { "param": "trem.depth", "label": "Depth", "size": "large" },
+      { "param": "trem.rate", "label": "Rate" },
+      { "param": "trem.sync", "label": "Sync" },
+      { "param": "trem.division", "type": "menu", "label": "Division" }
+    ]},
+    { "title": "Condition", "wide": true, "controls": [
+      { "param": "wear.age", "label": "Age", "size": "large" },
+      { "param": "wear.serial", "label": "Serial", "size": "small" },
+      { "type": "wearMap" },
+      { "param": "wear.tuning", "label": "Tuning", "size": "small" },
+      { "param": "wear.voicing", "label": "Voicing", "size": "small" },
+      { "param": "wear.hammers", "label": "Hammer tips", "size": "small" },
+      { "param": "wear.dampers", "label": "Dampers", "size": "small" },
+      { "param": "wear.action", "label": "Action", "size": "small" },
+      { "param": "wear.rattle", "label": "Rattles", "size": "small" },
+      { "param": "wear.electronics", "label": "Electronics", "size": "small" },
+      { "param": "wear.mains", "label": "Mains" }
+    ]},
+    { "title": "Twists", "controls": [
+      { "param": "twist.stretch", "label": "Partial ratio" },
+      { "param": "twist.sustain", "label": "Sustain" },
+      { "param": "twist.shimmer", "label": "Shimmer" },
+      { "param": "twist.sustainer", "label": "Sustainer" }
+    ]},
     { "kit": "lfo1" },
+    { "kit": "lfo2" },
+    { "kit": "shape1" },
     { "kit": "modMatrix", "wide": true },
     { "kit": "voices" },
     { "kit": "master" }

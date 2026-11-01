@@ -1,0 +1,25 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Bell Tines",
+  "tags": [
+    "tine",
+    "bright"
+  ],
+  "params": {
+    "hammer.strike": 0.9,
+    "pickup.offset": 0.1,
+    "hammer.hardness": 0.7,
+    "amp.type": 3,
+    "amp.speaker": 0,
+    "room.mix": 0.35
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

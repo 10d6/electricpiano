@@ -1,13 +1,57 @@
 {
-  "patch": "init",
-  "length": 4,
-  "events": [
-    { "t": 0, "on": 60, "vel": 100 },
-    { "t": 0, "on": 64, "vel": 100 },
-    { "t": 0, "on": 67, "vel": 100 },
-    { "t": 1, "off": 60 },
-    { "t": 1, "off": 64 },
-    { "t": 1, "off": 67 }
-  ],
-  "expect": { "soundBy": 0.05, "silentAfter": 3.5, "limiterBelow": 1 }
+ "patch": "init",
+ "length": 4,
+ "events": [
+  {
+   "t": 0,
+   "on": 48,
+   "vel": 100
+  },
+  {
+   "t": 0,
+   "on": 55,
+   "vel": 100
+  },
+  {
+   "t": 0,
+   "on": 60,
+   "vel": 100
+  },
+  {
+   "t": 0,
+   "on": 64,
+   "vel": 100
+  },
+  {
+   "t": 1.5,
+   "off": 48
+  },
+  {
+   "t": 1.5,
+   "off": 55
+  },
+  {
+   "t": 1.5,
+   "off": 60
+  },
+  {
+   "t": 1.5,
+   "off": 64
+  }
+ ],
+ "expect": {
+  "soundBy": 0.02,
+  "silentAfter": 3.6,
+  "peakBelow": -3,
+  "levelAt": [
+   {
+    "t": 1.0,
+    "above": -40
+   },
+   {
+    "t": 2.4,
+    "below": -50
+   }
+  ]
+ }
 }

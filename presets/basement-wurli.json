@@ -1,0 +1,29 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Basement Wurli",
+  "tags": [
+    "reed",
+    "worn"
+  ],
+  "params": {
+    "mech.type": 1,
+    "pickup.type": 1,
+    "amp.type": 2,
+    "wear.age": 0.7,
+    "wear.electronics": 0.8,
+    "wear.dampers": 0.7,
+    "wear.rattle": 0.7,
+    "trem.depth": 0.5,
+    "trem.rate": 5.4,
+    "wear.serial": 2207
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}
