@@ -1,0 +1,35 @@
+{
+ "patch": "sustainer-swells",
+ "length": 7,
+ "events": [
+  {
+   "t": 0,
+   "on": 52,
+   "vel": 50
+  },
+  {
+   "t": 0.5,
+   "cc": 1,
+   "value": 127
+  },
+  {
+   "t": 4.0,
+   "cc": 1,
+   "value": 0
+  },
+  {
+   "t": 4.5,
+   "off": 52
+  }
+ ],
+ "expect": {
+  "soundBy": 0.05,
+  "silentAfter": 6.5,
+  "levelAt": [
+   {
+    "t": 3.5,
+    "above": -30
+   }
+  ]
+ }
+}

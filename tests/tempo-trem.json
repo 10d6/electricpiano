@@ -1,0 +1,31 @@
+{
+ "patch": "sync-pan",
+ "transport": {
+  "bpm": 96,
+  "playing": true
+ },
+ "lengthBeats": 8,
+ "events": [
+  {
+   "beat": 0,
+   "on": 60,
+   "vel": 90
+  },
+  {
+   "beat": 0,
+   "on": 67,
+   "vel": 90
+  },
+  {
+   "beat": 6,
+   "off": 60
+  },
+  {
+   "beat": 6,
+   "off": 67
+  }
+ ],
+ "expect": {
+  "soundBy": 0.03
+ }
+}

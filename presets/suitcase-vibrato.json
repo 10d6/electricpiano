@@ -1,0 +1,26 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Suitcase Vibrato",
+  "tags": [
+    "tine",
+    "classic",
+    "stereo"
+  ],
+  "params": {
+    "amp.type": 1,
+    "trem.depth": 0.55,
+    "trem.rate": 4.2,
+    "amp.drive": 0.15,
+    "amp.treble": 2,
+    "room.mix": 0.2
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.rate",
+      "amt": 0.3
+    }
+  ]
+}

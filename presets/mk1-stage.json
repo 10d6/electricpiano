@@ -1,0 +1,22 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Mk I Stage",
+  "tags": [
+    "tine",
+    "classic"
+  ],
+  "params": {
+    "amp.drive": 0.3,
+    "amp.bass": 2,
+    "pickup.offset": 0.38
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Barn Find",
+  "tags": [
+    "tine",
+    "worn"
+  ],
+  "params": {
+    "wear.age": 1.0,
+    "wear.tuning": 0.75,
+    "wear.voicing": 0.8,
+    "wear.hammers": 0.7,
+    "wear.dampers": 0.8,
+    "wear.action": 0.7,
+    "wear.rattle": 0.7,
+    "wear.electronics": 0.6,
+    "wear.serial": 4012,
+    "wear.mains": 1,
+    "room.mix": 0.25
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

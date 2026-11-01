@@ -65,3 +65,37 @@ Every PR: native checks, the browser page (Chromium test + browser-vs-native
 comparison), a Pages preview linked on the PR, and plugin builds for Windows,
 macOS and Linux (plugin check, pluginval, auval) with a zip per OS. A `v*` tag
 publishes a release. The steps live in `synthkit/tools/ci/`.
+
+## This synth
+
+A physical model, not samples (README → "How it makes its sound"). The
+owner's goals: realistic tine (Rhodes-style) and reed (Wurlitzer-style)
+pianos first, the eccentricities of worn instruments, then new twists on top.
+Clavinet/Pianet and CP-70-style strings are candidates for later mechanisms.
+
+- **One voice per key.** `allocateVoice` hands a re-struck key its own
+  ringing voice, and `start` with `s.sounding` keeps the modes moving: the
+  hammer meets the tine wherever it is.
+- **Pitch.** Modes are rotating phasors, so pitch bend and `sk.pitch` retune
+  them every block without changing their energy. Per-key tuning faults come
+  from `tune()`.
+- **Global values for `tune()` and `start()`.** Neither has parameter access,
+  so `processEvents` caches what they need (`cur*` members) every block.
+- **Wear** is drawn per key from `hashSeed(serial, note)`, with every draw
+  taken in a fixed order whatever the amounts, so knobs scale the same faults
+  smoothly. Change the draw order and every saved instrument changes: append
+  new draws at the end.
+- **The acoustic bus.** Voices add the action's thumps to `synth.acoustic`;
+  `processGlobal` mixes them after the electronics and clears it.
+- **Noise gate.** Hum, hiss and crackle follow `activeVoices()` and fade after
+  the last note, so the kit's "silent after all-notes-off" checks hold.
+- **Don't map `cc()` to a parameter that changes the sound abruptly mid-note**
+  (tremolo depth on CC 1 broke the block-size check: a CC-mapped parameter
+  moves at the start of the host's block, not at the event's sample). Route
+  the mod wheel through the matrix in presets instead.
+
+Voicing work: measure, don't guess. `tools/harmonics.py` prints each note's
+harmonics at the attack and at 0.6 s, T60 and release time, with the amp,
+cabinet and room switched off by its parameters argument. `tools/spectrogram.py`
+shows clicks (vertical lines) and aliasing (lines folding down).
+`tools/demos.sh` renders the phrases in `demos/` for listening.

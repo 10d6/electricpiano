@@ -1,0 +1,26 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Wurli Tremolo",
+  "tags": [
+    "reed",
+    "classic"
+  ],
+  "params": {
+    "mech.type": 1,
+    "pickup.type": 1,
+    "amp.type": 2,
+    "amp.drive": 0.25,
+    "trem.depth": 0.6,
+    "trem.rate": 5.6,
+    "room.mix": 0.15
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.4
+    }
+  ]
+}

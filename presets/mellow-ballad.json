@@ -1,0 +1,28 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Mellow Ballad",
+  "tags": [
+    "tine",
+    "soft"
+  ],
+  "params": {
+    "hammer.hardness": 0.25,
+    "hammer.strike": 0.2,
+    "pickup.offset": 0.6,
+    "pickup.gap": 1.4,
+    "amp.treble": -4,
+    "amp.type": 1,
+    "trem.depth": 0.25,
+    "trem.rate": 3.2,
+    "room.mix": 0.3
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

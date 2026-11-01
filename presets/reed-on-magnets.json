@@ -1,0 +1,23 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Reed on Magnets",
+  "tags": [
+    "reed",
+    "twist"
+  ],
+  "params": {
+    "mech.type": 1,
+    "pickup.type": 0,
+    "amp.type": 0,
+    "amp.drive": 0.3
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

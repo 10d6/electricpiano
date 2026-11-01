@@ -1,0 +1,18 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Sync Pan",
+  "tags": [
+    "tine",
+    "stereo",
+    "tempo"
+  ],
+  "params": {
+    "amp.type": 1,
+    "trem.sync": 1,
+    "trem.division": 4,
+    "trem.depth": 0.8,
+    "room.mix": 0.2
+  }
+}

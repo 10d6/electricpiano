@@ -1,0 +1,26 @@
+{
+  "synthkit": 1,
+  "synth": "electricpiano",
+  "patchVersion": 1,
+  "name": "Gigged Hard",
+  "tags": [
+    "tine",
+    "worn"
+  ],
+  "params": {
+    "wear.age": 0.55,
+    "wear.tuning": 0.6,
+    "wear.hammers": 0.7,
+    "wear.electronics": 0.5,
+    "amp.drive": 0.35,
+    "amp.type": 1,
+    "trem.depth": 0.3
+  },
+  "mod": [
+    {
+      "src": "modwheel",
+      "dst": "trem.depth",
+      "amt": 0.7
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+/* Electric Piano: the wear map widget (ui/custom.js). */
+.wearmap { display: flex; flex-direction: column; gap: 6px; flex: 1 1 420px; min-width: 260px; }
+.wearmap-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.wearmap-title { font-size: 12px; color: var(--ink); font-weight: 600; letter-spacing: 0.02em; }
+.wearmap-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.wearmap-btns .btn { font-size: 11px; padding: 3px 8px; }
+.wearmap-canvas { width: 100%; height: 96px; border-radius: 6px; background: var(--field); border: 1px solid var(--edge); cursor: pointer; }
+.wearmap-legend { display: flex; gap: 12px; font-size: 11px; color: var(--ink-soft); }
+.wearmap-legend .lg::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+.wearmap-legend .tune::before { background: linear-gradient(90deg, #2a72c0 50%, #c0502a 50%); }
+.wearmap-legend .voice::before { background: rgba(181, 83, 42, 0.8); }
+.wearmap-legend .mech::before { background: rgba(120, 90, 160, 0.8); }
+.wearmap-legend .svc::before { background: rgba(70, 150, 90, 0.7); }

@@ -1,0 +1,25 @@
+{
+ "patch": "barn-find",
+ "length": 0.5,
+ "events": [
+  {
+   "t": 0.05,
+   "msg": "wear.map",
+   "values": [
+    1
+   ]
+  },
+  {
+   "t": 0.1,
+   "on": 60,
+   "vel": 80
+  },
+  {
+   "t": 0.3,
+   "off": 60
+  }
+ ],
+ "expect": {
+  "soundBy": 0.15
+ }
+}
